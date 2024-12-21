@@ -114,7 +114,6 @@ const skills = [
 const SkillShowcase = () => {
   return (
     <Container>
-      <Title>Skills Developed by Yash</Title>
       <Grid>
         {skills.map((skill, index) => (
           <SkillCard key={index}>
