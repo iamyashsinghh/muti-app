@@ -1,7 +1,7 @@
 "use client";
 import styled from "styled-components";
 import Link from "next/link";
-import { FaHome, FaInfoCircle, FaEnvelope } from "react-icons/fa";
+import { FaHome, FaInfoCircle, FaEnvelope, FaTools, FaSearch } from "react-icons/fa";
 
 const HeaderContainer = styled.header`
   background-color: #282c34;
@@ -26,6 +26,7 @@ const Logo = styled.div`
   font-weight: bold;
   color: #61dafb;
   text-transform: uppercase;
+  cursor: pointer;
 
   @media (max-width: 768px) {
     margin-bottom: 1rem;
@@ -39,6 +40,7 @@ const Nav = styled.nav`
   @media (max-width: 768px) {
     gap: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
   }
 `;
 
@@ -68,19 +70,18 @@ const NavLink = styled(Link)`
 const Header = () => {
   return (
     <HeaderContainer>
-        <Link href='/'><Logo>DEV X</Logo></Link>
+      <Link href="/">
+        <Logo>DEV X</Logo>
+      </Link>
       <Nav>
         <NavLink href="/">
           <FaHome /> Home
         </NavLink>
         <NavLink href="/text-utils">
-          <FaHome /> Text Utils
+          <FaTools /> Text Utils
         </NavLink>
-        {/* <NavLink href="/ai-detection">
-          <FaHome /> Ai Detection
-        </NavLink> */}
         <NavLink href="/serp-simulator">
-          <FaInfoCircle /> Serp Simulator
+          <FaSearch /> SERP Simulator
         </NavLink>
         <NavLink href="/about">
           <FaInfoCircle /> About
