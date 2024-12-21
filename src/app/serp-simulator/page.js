@@ -107,7 +107,7 @@ export default function SERPSimulator() {
   const [titlePixelWidth, setTitlePixelWidth] = useState(0);
   const [descriptionPixelWidth, setDescriptionPixelWidth] = useState(0);
 
-  const TITLE_CHARACTER_LIMIT = 62;
+  const TITLE_CHARACTER_LIMIT = 60;
   const TITLE_PIXEL_LIMIT = 580;
   const DESCRIPTION_CHARACTER_LIMIT = 160;
   const DESCRIPTION_PIXEL_LIMIT = 920;

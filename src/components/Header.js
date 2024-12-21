@@ -89,6 +89,9 @@ const Header = () => {
         <NavLink href="/contact">
           <FaEnvelope /> Contact
         </NavLink>
+        <NavLink href="https://weddingbanquets.in">
+          <FaEnvelope /> Wedding Banquets
+        </NavLink>
       </Nav>
     </HeaderContainer>
   );
